@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centralizando blocos e texto</title>
+</head>
+<style type="text/css">
+
+	html, body { 
+		margin:0; 
+		height: 100%;
+		background-color: #000;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+	}
+	.pai nav ul,.pai nav ul li{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}/*fim resets*/
+
+	.pai{
+		background-color: #ccc;
+		width: 50%;
+		min-height: 50%;
+		
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0px auto;
+		
+	}
+	.filho{
+		background-color: #fff;
+		width: 50%;
+		height: 50%;
+		
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+	}
+	.filho p{
+		
+		text-align: center;
+		background: #999;
+		margin: 10px auto;
+
+		
+	}
+	.pai nav {
+		margin: 5px auto;
+		background: black;
+				
+		
+	}
+
+	.pai nav ul {
+		margin: 10px auto;
+
+		
+	}
+	.pai nav ul li{
+		background-color: purple;
+		display: inline-block;
+		padding: 10px 20px;
+		border: 2px solid red;
+		margin: 5px 10px;
+
+	}
+</style>
+<body>
+	<div class="pai">
+		<nav>
+			<ul>
+				<li>home</li>
+				<li>catalago</li>
+				<li>contato</li>
+			</ul>
+		</nav>
+		<div class="filho">
+			<p>Texto filho1</p>
+			<p>Texto filho2</p>
+			<p>Texto filho3</p>
+
+		</div>
+	</div>
+</body>
+</html>
